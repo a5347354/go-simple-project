@@ -15,7 +15,7 @@ type service struct {
 
 func (s *service) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloResponse, error) {
 	log.Printf("Received: %v", in.GetGreeting())
-	return &pb.HelloResponse{Reply: "Hello, " + in.GetGreeting()}, nil
+	return &pb.HelloResponse{Reply: "Hello, " + in.GetGreeting(), Say: "123"}, nil
 }
 
 func main() {

@@ -10,4 +10,5 @@ message HelloRequest {
 
 message HelloResponse {
   string reply = 1;
+  string say = 2;
 }

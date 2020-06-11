@@ -26,4 +26,6 @@ func main() {
 		log.Fatalf("Could not get nonce: %v", err)
 	}
 	fmt.Println("Response:", r.GetReply())
+	fmt.Println("Response:", r.GetSay())
+	fmt.Println("Response:", r.String())
 }
