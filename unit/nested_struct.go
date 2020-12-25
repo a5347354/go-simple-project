@@ -1,4 +1,4 @@
-package complicated_struct
+package unit
 
 import (
 	"encoding/json"
